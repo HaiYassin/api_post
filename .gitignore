@@ -51,5 +51,31 @@
 # Embedded web-server pid file
 /.web-server-pid
 
-# Igonore DS generated
+# Ignore DS generated
 /.DS_Store
+/docker/.DS_Store
+/docker/config/.DS_Store
+/docker/infra/.DS_Store
+
+# Ignore *.env file
+api_symfony/.env
+docker/config/db/database.env
+/docker/config/db/database.env
+
+api_symfony/var/*
+api_symfony/vendor/*
+docker/infra/nginx/log/*
+
+/api_symfony/var/*
+/api_symfony/vendor/*
+/docker/infra/nginx/log/*
+
+###> symfony/framework-bundle ###
+/api_symfony/.env.local
+/api_symfony/.env.local.php
+/api_symfony/.env.*.local
+/api_symfony/config/secrets/prod/prod.decrypt.private.php
+/api_symfony/public/bundles/
+/api_symfony/var/
+/api_symfony/vendor/
+###< symfony/framework-bundle ###
